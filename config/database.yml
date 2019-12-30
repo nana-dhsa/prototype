@@ -17,3 +17,43 @@ production:
       namespace: prototype
       expires_in: <%= 1.day %>
       compress: false
+
+development:
+  development:
+  adapter: mysql2
+  encoding: utf8mb4
+  database: prototype1
+  pool: 5
+  host: 172.18.0.3
+  username: root
+  password: password
+  variables:
+    sql_mode: TRADITIONAL
+  redis:
+    host: 172.19.0.2
+    port: 6379
+    db: 0
+    options:
+      namespace: prototype1
+      expires_in: <%= 1.day %>
+      compress: false
+
+test:
+  development:
+  adapter: mysql2
+  encoding: utf8mb4
+  database: prototype2
+  pool: 5
+  host: 172.18.0.3
+  username: root
+  password: password
+  variables:
+    sql_mode: TRADITIONAL
+  redis:
+    host: 172.19.0.2
+    port: 6379
+    db: 0
+    options:
+      namespace: prototype2
+      expires_in: <%= 1.day %>
+      compress: false
