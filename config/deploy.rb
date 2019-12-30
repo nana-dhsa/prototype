@@ -1,7 +1,7 @@
 lock "~> 3.11.0"
 
 set :application, "prototype"
-set :repo_url, "git@github.com:nana-dhsa/ba.git"
+set :repo_url, "git@github.com:nana-dhsa/prototype.git"
 set :bundle_binstubs, nil
 
 # Default branch is :master
