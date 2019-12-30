@@ -1,0 +1,19 @@
+production:
+  development:
+  adapter: mysql2
+  encoding: utf8mb4
+  database: prototype
+  pool: 5
+  host: 172.18.0.3
+  username: root
+  password: password
+  variables:
+    sql_mode: TRADITIONAL
+  redis:
+    host: 172.19.0.2
+    port: 6379
+    db: 0
+    options:
+      namespace: prototype
+      expires_in: <%= 1.day %>
+      compress: false
