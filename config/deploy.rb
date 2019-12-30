@@ -1,11 +1,11 @@
 lock "~> 3.11.0"
 
 set :application, "prototype"
-set :repo_url, "git@github.com:duongpham910/deploy_prototype.git"
+set :repo_url, "git@github.com:nana-dhsa/ba.git"
 set :bundle_binstubs, nil
 
 # Default branch is :master
-set :branch, "develop"
+set :branch, "master"
 
 set :deploy_to, "/var/www/html/#{fetch(:application)}"
 
